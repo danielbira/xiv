@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebe abordo</title>
+</head>
+    <style>
+    body{
+        background-image: url(./bebe.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+    }
+
+    .titulo{
+         text-align: center;
+         color: white;
+         font-size: 3em;
+         left: 50%;
+         height: 50%;
+         
+         background-color:black;
+         opacity: 1;
+         border-radius: 0.8rem;
+         
+    }
+    .app{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttonGroup{
+        margin-top: 150px;
+
+    }
+    button{
+        position: absolute;
+        display: flex;
+        cursor: pointer;
+        margin: 01px;
+        padding: 30px 50px;
+        background-color: burlywood;
+        border: none;
+        border-radius: 0.8rem;
+    }
+
+    .mz{
+        right: 45%;
+        
+        }
+    .jp{
+        left: 52%;
+    }
+
+    .hl{
+        left: 69%;
+    }
+    .nm{
+        left: 34%;
+    }
+    .td{
+        left: 18%;
+    }
+
+    .popup{
+        width: 400px;
+        background: black;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: white;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
+
+    .popup img{
+        width: 100px;
+        margin-top: -50%;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) ;
+    }
+
+    .open-popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+
+    </style>
+
+<body>
+    <p class="titulo">QUE SERÁ OS NOVOS PAPAIS DA XIV?</p>
+    <div class="buttonGroup">
+        <button type="submit" calss="mz" onclick="openPopup()">Maria e Zannete</button>
+        <div class="popup" id="popup">
+            <img src="./cegonha.jpg">
+            <h2>PARABÉNS MARIA E ZANNETE</h2>
+            
+        </div>
+        <button class="td">Thais e Daniel</button>
+        <button class="jp">Julia e Patrick</button>
+        <button class="hl">Helo e LuiS</button>
+        <button class="nm">Nona e Maumau</button>
+    </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
